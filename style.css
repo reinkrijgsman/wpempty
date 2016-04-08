@@ -1,0 +1,15 @@
+/*
+Theme Name: WPEmpty
+Theme URI: http://github.com/reinkrijgsman/wpempty
+Author: Rein Krijgsman
+Author URI: http://ophetweb.nl/
+Description: This is the description
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,700italic,400italic,300italic,300);
+
+body {
+  background-color: #ccc;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
