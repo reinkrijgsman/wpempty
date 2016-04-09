@@ -1,5 +1,8 @@
 
-<h1>This is the footer</h1>
+<h6>This is the footer</h6>
+
+</div><!-- .container-fluid -->
+</div><!-- .container-wrap -->
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>

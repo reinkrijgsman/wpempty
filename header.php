@@ -21,16 +21,23 @@
 <body>
 
   <nav class="navbar" role="navigation">
-    <div class="container container_nav">
+    <div class="container_nav container-fluid">
 
-      <div class="navbar-header">
-        <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="fa fa-bars"></span>
-        </button>
+      <div class="navbar-left col-sm-4">
+        <p>search</p>
       </div>
-      <div id="navbar-left"></div>
-      <div id="navbar" class="collapse navbar-collapse">
+
+      <div class="navbar-center col-sm-4">
+        <div class="navbar-header">
+          <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars"></span>
+          </button>
+        </div>
+        <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+      </div><!--/.nav-collapse -->
+
+      <div id="navbar" class="navbar-right col-xs-12 col-sm-4 collapse navbar-collapse">
         <?php /* Primary navigation */
           wp_nav_menu( array(
             'depth' => 1,
@@ -40,7 +47,11 @@
             'walker' => new My_Walker_Nav_Menu()
           ));
         ?>
-      </div><!--/.nav-collapse -->
-      <div id="navbar-right"></div>
+      </div>
+
     </div><!-- .container -->
   </nav>
+
+
+  <div class="container-wrap">
+    <div class="container-fluid container-full-rounded">
