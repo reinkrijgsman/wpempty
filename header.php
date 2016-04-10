@@ -21,19 +21,19 @@
 <body>
 
   <nav class="navbar" role="navigation">
-    <div class="container_nav container-fluid">
+    <div class="container_nav">
 
-      <div class="navbar-left col-sm-4">
-        <p>search</p>
-      </div>
-
-      <div class="navbar-center col-sm-4">
+      <div class="navbar-left col-xs-3 col-sm-4">
         <div class="navbar-header">
           <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="fa fa-bars"></span>
+            <span class="navbar-menu fa fa-bars"></span>
           </button>
+          <?php get_search_form(); ?>
         </div>
+      </div>
+
+      <div class="navbar-center col-xs-6 col-sm-4">
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div><!--/.nav-collapse -->
 
@@ -54,4 +54,4 @@
 
 
   <div class="container-wrap">
-    <div class="container-fluid container-full-rounded">
+    <div class="container-fluid container">
